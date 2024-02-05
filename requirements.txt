@@ -3,4 +3,5 @@ beautifulsoup4==4.12.2
 fastapi==0.108.0
 feedparser==6.0.11
 pandas==2.1.4
+pyarrow==15.0.0
 uvicorn==0.25.0
