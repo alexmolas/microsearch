@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block heading %} Search Results - {{ query }} {% endblock %}
+
+{% block content %}
+<body>
+    <ul>
+        {% for url, score in results.items() %}
+            <li><a href="{{ url }}">{{ url }}</a> - Score: {{ score }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+{% endblock %}

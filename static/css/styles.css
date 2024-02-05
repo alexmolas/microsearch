@@ -1,0 +1,76 @@
+h1 {
+    font-size: 30px;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 33px;
+    margin: 7px;
+    padding: 0;
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 1rem;
+}
+
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+}
+  
+.loginlink {
+    text-align: left;
+}
+
+.navbar {
+    background-origin: padding-box;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+/* Style for the blockquotes, ie: when using > */
+blockquote {
+    border-left: 2px solid #cccccc;
+    /* Add a left border */
+    padding: 0 15px;
+    /* Add some padding for space */
+    margin: 10px 0;
+    /* Add margin for separation */
+    color: #555;
+    /* Set the text color */
+}
+
+/* Style for the post dates */
+.post-date {
+    font-family: 'Courier New', Courier, monospace;
+    color: #575757;
+    font-size: 18px;
+}
+
+
+summary {
+    cursor: pointer;
+    background-color: #eee;
+    padding: .25rem 1rem;
+    margin: 0 -1rem
+}
+
+details[open] {
+    border-bottom: 1rem solid #eee;
+    margin: 0 -1rem 1rem;
+    padding: 0 1rem
+}

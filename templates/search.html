@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block heading %} {{ posts|length }} indexed posts {% endblock %}
+{% block content %}
+<body>
+    <form id="searchForm" method="post">
+        <label for="query">Enter your search query:</label>
+        <input type="text" id="query" name="query" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <script>
+        document.getElementById("searchForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var queryValue = document.getElementById("query").value;
+            window.location.href = "/results/" + encodeURIComponent(queryValue);
+        });
+    </script>
+</body>
+</html>
+{% endblock %}

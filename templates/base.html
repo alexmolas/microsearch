@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+    {% include "navbar.html" %}
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}microsearch{% endblock %}</title>
+        <link href="{{ url_for('static', path='/css/styles.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <h1>{% block heading %}microsearch{% endblock %}</h1>
+
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
