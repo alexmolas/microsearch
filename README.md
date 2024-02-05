@@ -1,5 +1,5 @@
-microsearch
----
+# microsearch
+
 
 ## Install environment
 
@@ -29,7 +29,7 @@ Now we need to download the content of the blogs. Here I provide a list of feeds
 python scripts/download_content.py --feed-path feeds.txt
 ```
 
-## Launch app
+## Launch app
 
 Finally, once the content is crawled and stored you can run the app as
 
