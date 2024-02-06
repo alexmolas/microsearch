@@ -30,7 +30,7 @@ activate the environment
 source venv/bin/activate
 ```
 
-and install dependencies
+and install the package and the dependencies
 
 ```bash
 pip install .
