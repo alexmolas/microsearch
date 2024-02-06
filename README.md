@@ -33,7 +33,7 @@ source venv/bin/activate
 and install dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install .
 ```
 
 ## Crawl data
