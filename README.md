@@ -27,7 +27,7 @@ virtualenv -p python3.10 venv
 activate the environment
 
 ```bash
-sourve venv/bin/activate
+source venv/bin/activate
 ```
 
 and install dependencies
