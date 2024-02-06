@@ -41,7 +41,7 @@ pip install .
 Now we need to download the content of the blogs. I'm sharing [here](https://github.com/alexmolas/microsearch/blob/main/feeds.txt) a list of feed examples, but please feel free to use your own. To download the content do
 
 ```bash
-python scripts/download_content.py --feed-path feeds.txt
+python download_content.py --feed-path feeds.txt
 ```
 
 ## Launch app
@@ -50,7 +50,7 @@ Finally, once the content is crawled and stored you can run the app as
 
 
 ```bash
-python -m microsearch.app --data-path output.parquet
+python -m app.app --data-path output.parquet
 ```
 
 and if you navigate to [http://127.0.0.1:8000/](http://127.0.0.1:8000/) you'll be able to query the engine.
