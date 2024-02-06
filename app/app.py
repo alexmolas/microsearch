@@ -5,14 +5,19 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import pandas as pd
 from uvicorn import run
+import pathlib
 
 from microsearch.engine import SearchEngine
+
+script_dir = pathlib.Path(__file__).resolve().parent
+templates_path = script_dir / "templates"
+static_path = script_dir / "static"
 
 
 app = FastAPI()
 engine = SearchEngine()
-templates = Jinja2Templates(directory="templates")
-app.mount("/static", StaticFiles(directory="static"), name="static")
+templates = Jinja2Templates(directory=str(templates_path))
+app.mount("/static", StaticFiles(directory=str(static_path)), name="static")
 
 
 def get_top_urls(scores_dict: dict, n: int):
