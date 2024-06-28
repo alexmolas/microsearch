@@ -82,4 +82,3 @@ class SearchEngine:
         return self._index[keyword]
 
 
-engine = SearchEngine()
